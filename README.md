@@ -16,28 +16,45 @@ This PowerShell script recursively lists all `.vb`, `.exe`, and `.7z` files in a
 4. **Check the clipboard**: After running, the directory structure will be copied to your clipboard.
 
 ## Example Output
-## Example Output
 
-Assuming the following directory structure:
+```bash
+|-- Application
+|   |-- Interfaces
+|   |   +-- IAppRunner.vb
+|   |-- AppRunner.vb
+|   |-- ProcessExitHandler.vb
+|   +-- ServiceConfigurator.vb
+|
+|-- RegistryManagement
+|   |-- Interfaces
+|   |   |-- IApplicationRegistryManager.vb
+|   |   |-- IRegistryHelper.vb
+|   |   |-- IRegistryHive.vb
+|   |   |-- IRegistryInstaller.vb
+|   |   |-- IRegistryKey.vb
+|   |   |-- IRegistryUninstaller.vb
+|   |   +-- IStartupRegistryManager.vb
+|   |-- RegistryAccess
+|   |   +-- RegistryMode.vb
+|   |-- ApplicationRegistryManager.vb
+|   |-- MicrosoftRegistryHive.vb
+|   |-- MicrosoftRegistryKey.vb
+|   |-- RegistryHelper.vb
+|   |-- RegistryInstaller.vb
+|   |-- RegistryUninstaller.vb
+|   +-- StartupRegistryManager.vb
+|
+|-- Utilities
+|   |-- Interfaces
+|   |   |-- IUserInputChecker.vb
+|   |   |-- IUserInputReader.vb
+|   |   +-- IUserPrompter.vb
+|   |-- UserInputChecker.vb
+|   |-- UserInputReader.vb
+|   +-- UserPrompter.vb
+|
+|-- GlobalAttribute.vb
++-- Program.vb
+```
 
-C:\
-│
-├───Project
-│   ├───bin
-│   ├───obj
-│   ├───src
-│   │   ├───File1.vb
-│   │   └───File2.vb
-│   ├───build.exe
-│   └───archive.7z
-
-The output might look like this:
-
-+-- Project
-|   |-- src
-|   |   |-- File1.vb
-|   |   |-- File2.vb
-|   |-- build.exe
-|   |-- archive.7z
-
-Note: The `bin` and `obj` folders are excluded from the listing.
+The example output is from the [VbAutoRunRegistry GitHub repository](https://github.com/1d3nt/VbAutoRunRegistry).
