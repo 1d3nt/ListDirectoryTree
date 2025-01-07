@@ -1,5 +1,12 @@
-# Define the path you want to list
-$path = "C:\Users\sam\source\repos\GitHub Projects\ProcTerm12\ProcTerm12"
+# Author: Sam (ident)
+# Twitter: https://twitter.com/1d3nt
+# GitHub: https://github.com/1d3nt
+# Email: ident@simplecoders.com
+# VBForums: https://www.vbforums.com/member.php?113656-ident
+# ORCID: https://orcid.org/0009-0007-1363-3308
+
+# Define the path you want to list (Example: "C:\path\to\your\project")
+$path = "C:\path\to\your\project"
 
 # Define the exclusion list for folders
 $excludedFolders = @("bin", "obj")
