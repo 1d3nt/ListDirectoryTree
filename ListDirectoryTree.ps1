@@ -1,9 +1,36 @@
-# Author: Sam (ident)
-# Twitter: https://twitter.com/1d3nt
-# GitHub: https://github.com/1d3nt
-# Email: ident@simplecoders.com
-# VBForums: https://www.vbforums.com/member.php?113656-ident
-# ORCID: https://orcid.org/0009-0007-1363-3308
+<#
+.SYNOPSIS
+    Recursively lists all .vb, .exe, and .7z files in a specified directory while excluding common folders like "bin" and "obj".
+
+.DESCRIPTION
+    This script generates a tree-like structure of the specified directory, listing all relevant files (.vb, .exe, .7z) and excluding unwanted folders like "bin" and "obj".
+    The output is copied to the clipboard for easy sharing or further use.
+
+.NOTES
+    This script does not require administrative privileges.
+
+.EXAMPLE
+    .\ListDirectoryTree.ps1
+    Lists the files and folders starting from the defined root directory and copies the result to the clipboard.
+
+.AUTHOR
+    Sam (ident)
+
+.TWITTER
+    https://twitter.com/1d3nt
+
+.GITHUB
+    https://github.com/1d3nt
+
+.EMAIL
+    ident@simplecoders.com
+
+.VBFORUMS
+    https://www.vbforums.com/member.php?113656-ident
+
+.ORCID
+    https://orcid.org/0009-0007-1363-3308
+#>
 
 # Define the path you want to list (Example: "C:\path\to\your\project")
 $path = "C:\path\to\your\project"
